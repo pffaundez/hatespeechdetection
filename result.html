@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classification Result</title>
+</head>
+<body>
+    <h2>Classification Results:</h2>
+    {% for label, probability in prediction.items() %}
+        <p>{{ label }}: {{ probability }}%</p>
+    {% endfor %}
+</body>
+</html>
